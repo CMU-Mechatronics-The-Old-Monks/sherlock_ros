@@ -1,0 +1,5 @@
+[console_scripts]
+controller = mecanum_nodes.controller_node:main
+planner = mecanum_nodes.planner_node:main
+serial_sub = mecanum_nodes.serial_subscriber:main
+

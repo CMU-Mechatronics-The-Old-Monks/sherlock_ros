@@ -1,0 +1,23 @@
+[0.234s] Invoking command in '/home/alfajer/ros2_ws/src/mecanum_nodes': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/home/alfajer/ros2_ws/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alfajer/ros2_ws/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mecanum_nodes build --build-base /home/alfajer/ros2_ws/build/mecanum_nodes/build install --record /home/alfajer/ros2_ws/build/mecanum_nodes/install.log --single-version-externally-managed install_data
+[0.340s] running egg_info
+[0.341s] writing ../../build/mecanum_nodes/mecanum_nodes.egg-info/PKG-INFO
+[0.341s] writing dependency_links to ../../build/mecanum_nodes/mecanum_nodes.egg-info/dependency_links.txt
+[0.341s] writing entry points to ../../build/mecanum_nodes/mecanum_nodes.egg-info/entry_points.txt
+[0.341s] writing requirements to ../../build/mecanum_nodes/mecanum_nodes.egg-info/requires.txt
+[0.341s] writing top-level names to ../../build/mecanum_nodes/mecanum_nodes.egg-info/top_level.txt
+[0.342s] reading manifest file '../../build/mecanum_nodes/mecanum_nodes.egg-info/SOURCES.txt'
+[0.342s] writing manifest file '../../build/mecanum_nodes/mecanum_nodes.egg-info/SOURCES.txt'
+[0.342s] running build
+[0.342s] running build_py
+[0.343s] running install
+[0.343s] running install_lib
+[0.343s] running install_data
+[0.343s] running install_egg_info
+[0.344s] removing '/home/alfajer/ros2_ws/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes-0.0.1-py3.10.egg-info' (and everything under it)
+[0.344s] Copying ../../build/mecanum_nodes/mecanum_nodes.egg-info to /home/alfajer/ros2_ws/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes-0.0.1-py3.10.egg-info
+[0.345s] running install_scripts
+[0.356s] Installing controller script to /home/alfajer/ros2_ws/install/mecanum_nodes/lib/mecanum_nodes
+[0.356s] Installing planner script to /home/alfajer/ros2_ws/install/mecanum_nodes/lib/mecanum_nodes
+[0.356s] Installing serial script to /home/alfajer/ros2_ws/install/mecanum_nodes/lib/mecanum_nodes
+[0.356s] writing list of installed files to '/home/alfajer/ros2_ws/build/mecanum_nodes/install.log'
+[0.368s] Invoked command in '/home/alfajer/ros2_ws/src/mecanum_nodes' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/home/alfajer/ros2_ws/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alfajer/ros2_ws/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mecanum_nodes build --build-base /home/alfajer/ros2_ws/build/mecanum_nodes/build install --record /home/alfajer/ros2_ws/build/mecanum_nodes/install.log --single-version-externally-managed install_data
