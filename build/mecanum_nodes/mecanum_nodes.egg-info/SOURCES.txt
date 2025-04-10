@@ -16,7 +16,9 @@ mecanum_nodes/main.py
 mecanum_nodes/mecanum_kinematics.py
 mecanum_nodes/planner_node.py
 mecanum_nodes/poly_utils.py
+mecanum_nodes/publisher.py
 mecanum_nodes/serial_publisher.py
 mecanum_nodes/serial_subscriber.py
+mecanum_nodes/serial_subscriber_old.py
 mecanum_nodes/serial_test.py
 resource/mecanum_nodes

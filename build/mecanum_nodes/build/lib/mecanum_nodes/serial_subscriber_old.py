@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32MultiArray, Float32
+from std_msgs.msg import Float32MultiArray
 import serial
 import time
 from mecanum_nodes.data_manager import DataManager
@@ -10,24 +10,15 @@ from mecanum_nodes.data_manager import DataManager
 class StepperMotorNode(Node):
     def __init__(self):
         super().__init__('stepper_motor_node')
-        self.subscription_wheels = self.create_subscription(
+        self.subscription = self.create_subscription(
             Float32MultiArray,
             'wheel_vels',
             self.motor_command_callback,
             10)
         
-        self.subscription_outlet = self.create_subscription(
-            Float32,
-            'outlet_position',
-            self.outlet_callback,
-            10)
-        
-        self.latest_outlet_value = 0.0
-
-        
         # Open serial port for Teensy communication
         try:
-            self.Manager = DataManager(5, '/dev/ttyACM0', 115200, timeout=1)
+            self.Manager = DataManager(4, '/dev/ttyACM0', 115200, timeout=1)
             # self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
             # self.serial_port.dtr = False  # Disable DTR to avoid reset
             # self.serial_port.rts = False  # Disable RTS to avoid reset
@@ -39,14 +30,9 @@ class StepperMotorNode(Node):
             self.get_logger().error(f'Unable to open serial port: {e}')
             self.serial_port = None
 
-    def outlet_callback(self, msg):
-        self.latest_outlet_value = msg.data
-        self.get_logger().info(f'Updated outlet value: {self.latest_outlet_value:.2f}')
-
     def motor_command_callback(self, msg):
         command = msg.data
-        self.get_logger().info(f'Received wheel vels command: {command}')
-        merged = list(command) + [self.latest_outlet_value]
+        self.get_logger().info(f'Received command: {command}')
 
         # Send command to Teensy via serial
         # if self.serial_port and self.serial_port.is_open:
@@ -56,8 +42,8 @@ class StepperMotorNode(Node):
         #     self.get_logger().info(f'Sent command to Teensy: {command}')
         # else:
         #     self.get_logger().error('Serial port not open or unavailable.')
-        self.Manager.pack_and_transmit(merged)
-        self.get_logger().info(f'Sent command to Teensy: {merged}')
+        self.Manager.pack_and_transmit(command)
+        self.get_logger().info(f'Sent command to Teensy: {command}')
 
 
 def main(args=None):
