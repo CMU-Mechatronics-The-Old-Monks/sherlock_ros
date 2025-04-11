@@ -21,7 +21,7 @@ setup(
             'planner = mecanum_nodes.planner_node:main',
             'controller = mecanum_nodes.controller_node:main',
             'serial_sub = mecanum_nodes.serial_subscriber:main',
-            'stepper_pub = mecanum_nodes.publisher:main',
+            'stepper_pub = mecanum_nodes.stepper_pub:main',
         ],
     },
 )

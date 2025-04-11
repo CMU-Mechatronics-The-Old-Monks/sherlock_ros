@@ -22,5 +22,6 @@ source install/setup.bash
 
 ros2 run mecanum_nodes planner
 ros2 run mecanum_nodes controller
-ros2 run mecanum_nodes serial
+ros2 run mecanum_nodes serial_sub
+ros2 run mecanum_nodes stepper_pub
 
