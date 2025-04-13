@@ -31,7 +31,7 @@ def generate_launch_description():
                 os.path.join(my_bot_dir, 'launch', 'global_planner_only.launch.py')
             ),
             launch_arguments={
-                'map': os.path.join(my_bot_dir, 'config', 'map.yaml'),
+                'map': os.path.join(my_bot_dir, 'config', 'map1.yaml'),
             }.items()
         ),
 
