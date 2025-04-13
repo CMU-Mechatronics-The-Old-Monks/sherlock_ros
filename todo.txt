@@ -25,3 +25,7 @@ ros2 run mecanum_nodes controller
 ros2 run mecanum_nodes serial_sub
 ros2 run mecanum_nodes stepper_publisher
 
+
+ros2 launch my_bot bringup.launch.py
+
+
