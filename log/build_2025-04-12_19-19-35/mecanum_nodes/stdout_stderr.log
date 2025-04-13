@@ -1,0 +1,71 @@
+running egg_info
+creating ../../../build/mecanum_nodes/mecanum_nodes.egg-info
+writing ../../../build/mecanum_nodes/mecanum_nodes.egg-info/PKG-INFO
+writing dependency_links to ../../../build/mecanum_nodes/mecanum_nodes.egg-info/dependency_links.txt
+writing entry points to ../../../build/mecanum_nodes/mecanum_nodes.egg-info/entry_points.txt
+writing requirements to ../../../build/mecanum_nodes/mecanum_nodes.egg-info/requires.txt
+writing top-level names to ../../../build/mecanum_nodes/mecanum_nodes.egg-info/top_level.txt
+writing manifest file '../../../build/mecanum_nodes/mecanum_nodes.egg-info/SOURCES.txt'
+reading manifest file '../../../build/mecanum_nodes/mecanum_nodes.egg-info/SOURCES.txt'
+writing manifest file '../../../build/mecanum_nodes/mecanum_nodes.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sheitej/sherlock_ros/build/mecanum_nodes/build
+creating /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib
+creating /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/planner_node.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/main.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/serial_publisher.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/data_packet.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/publisher.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/poly_utils.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/mecanum_kinematics.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/data_manager.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/controller_node.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/serial_test.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/serial_subscriber.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/__init__.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+copying mecanum_nodes/serial_subscriber_old.py -> /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes
+running install
+running install_lib
+creating /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/planner_node.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/main.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/serial_publisher.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/data_packet.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/publisher.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/poly_utils.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/mecanum_kinematics.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/data_manager.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/controller_node.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/serial_test.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/serial_subscriber.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/__init__.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+copying /home/sheitej/sherlock_ros/build/mecanum_nodes/build/lib/mecanum_nodes/serial_subscriber_old.py -> /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/planner_node.py to planner_node.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/main.py to main.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/serial_publisher.py to serial_publisher.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/data_packet.py to data_packet.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/publisher.py to publisher.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/poly_utils.py to poly_utils.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/mecanum_kinematics.py to mecanum_kinematics.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/data_manager.py to data_manager.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/controller_node.py to controller_node.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/serial_test.py to serial_test.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/serial_subscriber.py to serial_subscriber.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes/serial_subscriber_old.py to serial_subscriber_old.cpython-310.pyc
+running install_data
+creating /home/sheitej/sherlock_ros/install/mecanum_nodes/share/ament_index
+creating /home/sheitej/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index
+creating /home/sheitej/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+copying resource/mecanum_nodes -> /home/sheitej/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+copying package.xml -> /home/sheitej/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes
+running install_egg_info
+Copying ../../../build/mecanum_nodes/mecanum_nodes.egg-info to /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum_nodes-0.0.1-py3.10.egg-info
+running install_scripts
+Installing controller script to /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing planner script to /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing serial_sub script to /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing stepper_pub script to /home/sheitej/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+writing list of installed files to '/home/sheitej/sherlock_ros/build/mecanum_nodes/install.log'

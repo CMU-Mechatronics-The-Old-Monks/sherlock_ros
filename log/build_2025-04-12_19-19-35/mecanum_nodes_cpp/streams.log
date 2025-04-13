@@ -1,0 +1,68 @@
+[0.131s] Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/src/mecanum_nodes_cpp -DCMAKE_INSTALL_PREFIX=/home/sheitej/sherlock_ros/install/mecanum_nodes_cpp
+[0.187s] -- The C compiler identification is GNU 11.4.0
+[0.228s] -- The CXX compiler identification is GNU 11.4.0
+[0.235s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.293s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.293s] -- Detecting C compile features
+[0.293s] -- Detecting C compile features - done
+[0.296s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.359s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.360s] -- Detecting CXX compile features
+[0.360s] -- Detecting CXX compile features - done
+[0.366s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.465s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.522s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.549s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.552s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.558s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.576s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.603s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.605s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.678s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.704s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.750s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.757s] -- Looking for pthread.h
+[0.833s] -- Looking for pthread.h - found
+[0.834s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.917s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.918s] -- Found Threads: TRUE  
+[0.954s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.998s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.998s] -- Configured cppcheck include dirs: 
+[0.998s] -- Configured cppcheck exclude dirs and/or files: 
+[0.999s] -- Added test 'lint_cmake' to check CMake code style
+[0.999s] -- Added test 'uncrustify' to check C / C++ code style
+[0.999s] -- Configured uncrustify additional arguments: 
+[0.999s] -- Added test 'xmllint' to check XML markup files
+[1.000s] -- Configuring done
+[1.004s] -- Generating done
+[1.006s] -- Build files have been written to: /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp
+[1.011s] Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/src/mecanum_nodes_cpp -DCMAKE_INSTALL_PREFIX=/home/sheitej/sherlock_ros/install/mecanum_nodes_cpp
+[1.013s] Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp -- -j16 -l16
+[1.070s] [ 50%] [32mBuilding CXX object CMakeFiles/stepper_publisher.dir/src/stepper_publisher.cpp.o[0m
+[3.224s] [100%] [32m[1mLinking CXX executable stepper_publisher[0m
+[3.339s] [100%] Built target stepper_publisher
+[3.346s] Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp -- -j16 -l16
+[3.355s] Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp
+[3.362s] -- Install configuration: ""
+[3.362s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/lib/mecanum_nodes_cpp/stepper_publisher
+[3.363s] -- Set runtime path of "/home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/lib/mecanum_nodes_cpp/stepper_publisher" to ""
+[3.363s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/ament_index/resource_index/package_run_dependencies/mecanum_nodes_cpp
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/ament_index/resource_index/parent_prefix_path/mecanum_nodes_cpp
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/environment/ament_prefix_path.sh
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/environment/ament_prefix_path.dsv
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/environment/path.sh
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/environment/path.dsv
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/local_setup.bash
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/local_setup.sh
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/local_setup.zsh
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/local_setup.dsv
+[3.364s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/package.dsv
+[3.365s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/ament_index/resource_index/packages/mecanum_nodes_cpp
+[3.365s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/cmake/mecanum_nodes_cppConfig.cmake
+[3.365s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/cmake/mecanum_nodes_cppConfig-version.cmake
+[3.365s] -- Installing: /home/sheitej/sherlock_ros/install/mecanum_nodes_cpp/share/mecanum_nodes_cpp/package.xml
+[3.368s] Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp

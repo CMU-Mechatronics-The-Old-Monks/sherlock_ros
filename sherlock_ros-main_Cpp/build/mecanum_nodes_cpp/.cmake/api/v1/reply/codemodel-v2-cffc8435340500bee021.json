@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-697d5ae1dc9cd2ca582d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mecanum_nodes_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mecanum_nodes_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mecanum_nodes_cpp_uninstall-39e3eb3665ad9cbb9a7f.json",
+					"name" : "mecanum_nodes_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stepper_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stepper_publisher-45efcec89cb30a4f3263.json",
+					"name" : "stepper_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c97a5e3348fa29784a0e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sheitej/Workspaces/sherlock_ros-main_Cpp/build/mecanum_nodes_cpp",
+		"source" : "/home/sheitej/Workspaces/sherlock_ros-main_Cpp/src/mecanum_nodes_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,159 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/sheitej/sherlock_ros']
+[0.069s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/sheitej/sherlock_ros'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7df36696f2b0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7df36696e200>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7df36696e200>>, mixin_verb=('list',))
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.169s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sheitej/sherlock_ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/build) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/build) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/build) ignored
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/install) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/install) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/install) ignored
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/log) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/log) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/log) ignored
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/build) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/build) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/build) ignored
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/install) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/install) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/install) ignored
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/log) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/log) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/log) ignored
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sheitej/sherlock_ros/sherlock_ros-main/src/mecanum_nodes' with type 'ros.ament_python' and name 'mecanum_nodes'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/resource) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/sherlock_ros-main/src/test) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/mecanum_nodes) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sheitej/sherlock_ros/src/mecanum_nodes' with type 'ros.ament_python' and name 'mecanum_nodes'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/resource) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sheitej/sherlock_ros/src/test) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

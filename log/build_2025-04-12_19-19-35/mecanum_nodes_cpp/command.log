@@ -1,0 +1,6 @@
+Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/src/mecanum_nodes_cpp -DCMAKE_INSTALL_PREFIX=/home/sheitej/sherlock_ros/install/mecanum_nodes_cpp
+Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/src/mecanum_nodes_cpp -DCMAKE_INSTALL_PREFIX=/home/sheitej/sherlock_ros/install/mecanum_nodes_cpp
+Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp -- -j16 -l16
+Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp -- -j16 -l16
+Invoking command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp
+Invoked command in '/home/sheitej/sherlock_ros/build/mecanum_nodes_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sheitej/sherlock_ros/build/mecanum_nodes_cpp
