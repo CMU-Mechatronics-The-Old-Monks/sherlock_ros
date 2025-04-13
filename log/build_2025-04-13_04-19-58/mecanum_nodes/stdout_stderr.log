@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating mecanum_nodes.egg-info
+writing mecanum_nodes.egg-info/PKG-INFO
+writing dependency_links to mecanum_nodes.egg-info/dependency_links.txt
+writing entry points to mecanum_nodes.egg-info/entry_points.txt
+writing requirements to mecanum_nodes.egg-info/requires.txt
+writing top-level names to mecanum_nodes.egg-info/top_level.txt
+writing manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+reading manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+writing manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum-nodes.egg-link (link to .)
+Installing controller script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing planner script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing serial_sub script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+Installing stepper_pub script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+
+Installed /home/tariq/sherlock_ros/build/mecanum_nodes
+running symlink_data
+creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index
+creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index
+creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+symbolically linking /home/tariq/sherlock_ros/build/mecanum_nodes/resource/mecanum_nodes -> /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+symbolically linking /home/tariq/sherlock_ros/build/mecanum_nodes/package.xml -> /home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes

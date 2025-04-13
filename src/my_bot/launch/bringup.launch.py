@@ -7,7 +7,6 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
 def generate_launch_description():
-
     my_bot_dir = get_package_share_directory('my_bot')
 
     return LaunchDescription([
@@ -18,23 +17,26 @@ def generate_launch_description():
             )
         ),
 
-        # 🔹 SLAM Toolbox (async)
+        # 🔹 SLAM Toolbox (async) with mapper params
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(my_bot_dir, 'launch', 'online_async_launch.py')
-            )
+            ),
+            launch_arguments={
+                'slam_params_file': os.path.join(my_bot_dir, 'config', 'mapper_params_online_async.yaml'),
+            }.items()
         ),
 
-        # 🔹 Nav2 Global Planner
+        # 🔹 Nav2 Global Planner with nav2_params and map
         IncludeLaunchDescription(
-    	    PythonLaunchDescriptionSource(
-        	os.path.join(my_bot_dir, 'launch', 'global_planner_only.launch.py')
-    	    ),
-    	    launch_arguments={
-        	'map': os.path.join(my_bot_dir, 'config', 'map1.yaml'),
-    	    }.items()
-	),
-
+            PythonLaunchDescriptionSource(
+                os.path.join(my_bot_dir, 'launch', 'global_planner_only.launch.py')
+            ),
+            launch_arguments={
+                'map': os.path.join(my_bot_dir, 'config', 'map1.yaml'),
+                'params_file': os.path.join(my_bot_dir, 'config', 'nav2_params.yaml'),
+            }.items()
+        ),
 
         # 🔹 Mecanum Nodes
         Node(
@@ -76,4 +78,3 @@ def generate_launch_description():
             output='screen'
         ),
     ])
-

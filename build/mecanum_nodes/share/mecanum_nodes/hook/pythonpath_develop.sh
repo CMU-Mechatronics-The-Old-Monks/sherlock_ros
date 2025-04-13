@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/home/alfajer/ros2_ws/build/mecanum_nodes"
+_colcon_prepend_unique_value PYTHONPATH "/home/tariq/sherlock_ros/build/mecanum_nodes"

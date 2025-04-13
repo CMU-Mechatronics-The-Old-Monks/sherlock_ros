@@ -1,0 +1,4 @@
+[console_scripts]
+filtered_path_publisher_node = my_bot.filtered_path_publisher_node:main
+goal_publisher_node = my_bot.goal_publisher_node:main
+
