@@ -46,12 +46,12 @@ class MecanumKinematics():
 
     def __init__(self):
 
-        self.wheel_radius = 0.097   #[m]
-        self.roller_radius = 0.02   #[m]
+        self.wheel_radius = 0.097/2   #[m]
+        self.roller_radius = 0.01   #[m]
         self.roller_angle = np.pi/4 #[rad]
         
-        self.width = 0.25           #[m]
-        self.length = 0.3           #[m]
+        self.width = 0.31           #[m]
+        self.length = 0.295           #[m]
 
         self.state = np.array([[0.0], [0.0], [0.0], [0.0], [0.0], [0.0]])
         self.state_idx = StateIDX()

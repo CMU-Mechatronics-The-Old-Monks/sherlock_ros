@@ -246,7 +246,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/home/sheitej/Workspaces/sherlock_ros-main_Cpp/install/mecanum_nodes_cpp"
+			"path" : "/home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/install/mecanum_nodes_cpp"
 		}
 	},
 	"link" : 

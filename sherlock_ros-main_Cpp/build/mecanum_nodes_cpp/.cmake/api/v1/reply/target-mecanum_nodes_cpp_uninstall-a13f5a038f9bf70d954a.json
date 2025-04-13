@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/sheitej/Workspaces/sherlock_ros-main_Cpp/build/mecanum_nodes_cpp/CMakeFiles/mecanum_nodes_cpp_uninstall",
+			"path" : "/home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/build/mecanum_nodes_cpp/CMakeFiles/mecanum_nodes_cpp_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/sheitej/Workspaces/sherlock_ros-main_Cpp/build/mecanum_nodes_cpp/CMakeFiles/mecanum_nodes_cpp_uninstall.rule",
+			"path" : "/home/sheitej/sherlock_ros/sherlock_ros-main_Cpp/build/mecanum_nodes_cpp/CMakeFiles/mecanum_nodes_cpp_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

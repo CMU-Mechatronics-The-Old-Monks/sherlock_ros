@@ -52,7 +52,8 @@ class PlannerNode(Node):
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
         # Example waypoints and a 3-second segment time per leg
         # self.waypoints = [(0, 0, 0), (.8, 0, 0), (.8, 0, 0), (0, 0, 0), (0, 0, 0), (-.8, 0, 0),  (-.8, 0, 0), (0, 0, 0),]
-        self.waypoints = [(0, 0, 0), (0, 0, 3), (0, 0, 3), (0, 0, 0),(0, 0, 0), (0, 0, -3), (0, 0, -3), (0, 0, 0)]
+        #self.waypoints = [(0, 0, 0), (0, 1, 0), (0, 1, 0), (-0.6, 1, 0),(-0.6, 1, 0), (-0.6, 2, 0)]
+        self.waypoints = [(0, 0, 0), (1, 0, 0), (1, 0, 0), (-1, 0, 0)]
         self.segments = plan_waypoints(self.waypoints, segment_time=1.0)
         self.current_segment = 0
         self.t = 0.0
