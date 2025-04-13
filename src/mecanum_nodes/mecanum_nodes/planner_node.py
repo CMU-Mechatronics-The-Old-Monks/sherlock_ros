@@ -1,21 +1,16 @@
 # mecanum_nodes/mecanum_nodes/planner_node.py
+# mecanum_nodes/mecanum_nodes/planner_node.py
+
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from std_msgs.msg import Float32MultiArray
 import numpy as np
 from .poly_utils import PolyTraj
 
+
 def create_cubic_3D(x0, y0, theta0, x1, y1, theta1, T):
-    """
-    Returns three PolyTraj objects, for x(t), y(t), and theta(t),
-    each with zero initial and final velocity.
-    
-    Parameters:
-      x0, y0, theta0 : initial position and heading
-      x1, y1, theta1 : final position and heading
-      T : segment duration
-    """
-    # Each initial state is a 2x1 vector: [position, velocity]
+    """Creates 3D PolyTraj segments with zero start/end velocity."""
     X0 = np.array([[x0], [0.0]])
     X1 = np.array([[x1], [0.0]])
     Y0 = np.array([[y0], [0.0]])
@@ -30,11 +25,7 @@ def create_cubic_3D(x0, y0, theta0, x1, y1, theta1, T):
 
 
 def plan_waypoints(waypoints, segment_time=2.0):
-    """
-    Takes a list of (x, y, theta) points and returns a list of segments.
-    Each segment is a tuple: (x_traj, y_traj, theta_traj, T_segment)
-    where each trajectory is a PolyTraj and T_segment is the duration.
-    """
+    """Return list of segments: (x_traj, y_traj, theta_traj, T)."""
     segments = []
     for i in range(len(waypoints)-1):
         x0, y0, theta0 = waypoints[i]
@@ -48,36 +39,59 @@ class PlannerNode(Node):
     def __init__(self):
         super().__init__('planner_node')
         self.publisher_ = self.create_publisher(Twist, 'desired_vel', 10)
-        self.timer_period = 0.05  # 20 Hz timer
+        self.timer_period = 0.05  # 20Hz
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
-        # Example waypoints and a 3-second segment time per leg
-        # self.waypoints = [(0, 0, 0), (.8, 0, 0), (.8, 0, 0), (0, 0, 0), (0, 0, 0), (-.8, 0, 0),  (-.8, 0, 0), (0, 0, 0),]
-        self.waypoints = [(0, 0, 0), (0, 0, 3), (0, 0, 3), (0, 0, 0),(0, 0, 0), (0, 0, -3), (0, 0, -3), (0, 0, 0)]
-        self.segments = plan_waypoints(self.waypoints, segment_time=1.0)
+
+        self.subscription = self.create_subscription(
+            Float32MultiArray,
+            'filtered_com_trajectory',
+            self.on_waypoint_msg,
+            10
+        )
+
+        self.segments = []
         self.current_segment = 0
         self.t = 0.0
+        self.is_ready = False
+
+    def on_waypoint_msg(self, msg):
+        flat = msg.data
+        if len(flat) % 2 != 0:
+            self.get_logger().warn("Waypoint list must be x, y pairs!")
+            return
+        # Convert to (x, y, theta=0.0)
+        waypoints = [(flat[i], flat[i+1], 0.0) for i in range(0, len(flat), 2)]
+        self.segments = plan_waypoints(waypoints, segment_time=1.0)
+        self.current_segment = 0
+        self.t = 0.0
+        self.is_ready = True
+        self.get_logger().info(f"Loaded {len(waypoints)} waypoints.")
 
     def timer_callback(self):
-        if self.current_segment < len(self.segments):
-            x_traj, y_traj, theta_traj, T_segment = self.segments[self.current_segment]
-            # Evaluate velocity from the trajectories (order=1 gives derivative)
-            vx = x_traj.evaluate(self.t, order=0)
-            vy = y_traj.evaluate(self.t, order=0)
-            vw = theta_traj.evaluate(self.t, order=0)
-            msg = Twist()
-            msg.linear.x = float(vx)
-            msg.linear.y = float(vy)
-            msg.angular.z = float(vw)
-            self.publisher_.publish(msg)
-            self.get_logger().info(f"Segment {self.current_segment}: t={self.t:.2f}, vx={vx:.2f}, vy={vy:.2f}")
-            self.t += self.timer_period
-            if self.t > T_segment:
-                self.current_segment += 1
-                self.t = 0.0
-        else:
-            # Optionally publish zeros when finished
-            msg = Twist()
-            self.publisher_.publish(msg)
+        if not self.is_ready or self.current_segment >= len(self.segments):
+            self.publisher_.publish(Twist())  # stop signal
+            return
+
+        x_traj, y_traj, theta_traj, T = self.segments[self.current_segment]
+        vx = x_traj.evaluate(self.t, order=0)
+        vy = y_traj.evaluate(self.t, order=0)
+        vw = theta_traj.evaluate(self.t, order=0)
+
+        msg = Twist()
+        msg.linear.x = float(vx)
+        msg.linear.y = float(vy)
+        msg.angular.z = float(vw)
+        self.publisher_.publish(msg)
+
+        self.get_logger().info(
+            f"Segment {self.current_segment} | t={self.t:.2f} | vx={vx:.2f} vy={vy:.2f}"
+        )
+
+        self.t += self.timer_period
+        if self.t > T:
+            self.current_segment += 1
+            self.t = 0.0
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -86,6 +100,8 @@ def main(args=None):
     node.destroy_node()
     rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
+
 
