@@ -1,0 +1,215 @@
+[0.163s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.163s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x744f55f537c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x744f5609ce20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x744f5609ce20>>)
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.565s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.565s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tariq/sherlock_ros'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extension 'ignore_ament_install'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extensions ['colcon_pkg']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extension 'colcon_pkg'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extensions ['colcon_meta']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extension 'colcon_meta'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extensions ['ros']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_nodes) by extension 'ros'
+[0.603s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_nodes' with type 'ros.ament_python' and name 'mecanum_nodes'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore_ament_install'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_pkg']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_pkg'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_meta']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_meta'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ros']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ros'
+[0.605s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_bot' with type 'ros.ament_python' and name 'my_bot'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'ignore'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'ignore_ament_install'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['colcon_pkg']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'colcon_pkg'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['colcon_meta']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'colcon_meta'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'ros'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['cmake', 'python']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'cmake'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'python'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extensions ['python_setup_py']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/resource) by extension 'python_setup_py'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['colcon_meta']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'colcon_meta'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['ros']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'ros'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['cmake', 'python']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'cmake'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'python'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extensions ['python_setup_py']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test) by extension 'python_setup_py'
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.642s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/tariq/sherlock_ros/install
+[0.643s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/tariq/linorobot2_ws/install
+[0.644s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/tariq/my_mec_botpytest/install
+[0.646s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 429 installed packages in /opt/ros/humble
+[0.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_target' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'mecanum_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.733s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tariq/sherlock_ros/build/mecanum_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tariq/sherlock_ros/install/mecanum_nodes', 'merge_install': False, 'path': '/home/tariq/sherlock_ros/src/mecanum_nodes', 'symlink_install': True, 'test_result_base': None}
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.733s] DEBUG:colcon.colcon_core.verb:Building package 'my_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tariq/sherlock_ros/build/my_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tariq/sherlock_ros/install/my_bot', 'merge_install': False, 'path': '/home/tariq/sherlock_ros/src/my_bot', 'symlink_install': True, 'test_result_base': None}
+[0.734s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.735s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.735s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tariq/sherlock_ros/src/mecanum_nodes' with build type 'ament_python'
+[0.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_nodes', 'ament_prefix_path')
+[0.739s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/ament_prefix_path.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/ament_prefix_path.dsv'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/ament_prefix_path.sh'
+[0.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.753s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tariq/sherlock_ros/src/my_bot' with build type 'ament_python'
+[0.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'ament_prefix_path')
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/ament_prefix_path.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/ament_prefix_path.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/ament_prefix_path.sh'
+[0.757s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.757s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.201s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tariq/sherlock_ros/src/mecanum_nodes'
+[1.201s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.201s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.705s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tariq/sherlock_ros/src/my_bot'
+[1.706s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.706s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tariq/sherlock_ros/build/mecanum_nodes': PYTHONPATH=/home/tariq/sherlock_ros/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/mecanum_nodes/build --no-deps symlink_data
+[2.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tariq/sherlock_ros/build/my_bot': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data
+[3.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_nodes', 'pythonpath_develop')
+[3.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/build/mecanum_nodes/share/mecanum_nodes/hook/pythonpath_develop.ps1'
+[3.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tariq/sherlock_ros/build/mecanum_nodes' returned '0': PYTHONPATH=/home/tariq/sherlock_ros/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/mecanum_nodes/build --no-deps symlink_data
+[3.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/build/mecanum_nodes/share/mecanum_nodes/hook/pythonpath_develop.dsv'
+[3.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/build/mecanum_nodes/share/mecanum_nodes/hook/pythonpath_develop.sh'
+[3.678s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes' for CMake module files
+[3.679s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes' for CMake config files
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes/lib'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes/bin'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes/lib/pkgconfig/mecanum_nodes.pc'
+[3.682s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages'
+[3.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_nodes', 'pythonpath')
+[3.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/pythonpath.ps1'
+[3.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/pythonpath.dsv'
+[3.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/hook/pythonpath.sh'
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/mecanum_nodes/bin'
+[3.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_nodes)
+[3.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/package.ps1'
+[3.690s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/package.dsv'
+[3.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/package.sh'
+[3.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/package.bash'
+[3.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes/package.zsh'
+[3.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tariq/sherlock_ros/install/mecanum_nodes/share/colcon-core/packages/mecanum_nodes)
+[3.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'pythonpath_develop')
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/build/my_bot/share/my_bot/hook/pythonpath_develop.ps1'
+[3.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tariq/sherlock_ros/build/my_bot' returned '0': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/build/my_bot/share/my_bot/hook/pythonpath_develop.dsv'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/build/my_bot/share/my_bot/hook/pythonpath_develop.sh'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot' for CMake module files
+[3.705s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot' for CMake config files
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot/lib'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot/bin'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot/lib/pkgconfig/my_bot.pc'
+[3.708s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages'
+[3.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'pythonpath')
+[3.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/pythonpath.ps1'
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/pythonpath.dsv'
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/hook/pythonpath.sh'
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/home/tariq/sherlock_ros/install/my_bot/bin'
+[3.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[3.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/package.ps1'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/package.dsv'
+[3.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/package.sh'
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/package.bash'
+[3.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/tariq/sherlock_ros/install/my_bot/share/my_bot/package.zsh'
+[3.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tariq/sherlock_ros/install/my_bot/share/colcon-core/packages/my_bot)
+[3.721s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.721s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.721s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.721s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.733s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.733s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.733s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.758s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.759s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tariq/sherlock_ros/install/local_setup.ps1'
+[3.761s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tariq/sherlock_ros/install/_local_setup_util_ps1.py'
+[3.764s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tariq/sherlock_ros/install/setup.ps1'
+[3.769s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tariq/sherlock_ros/install/local_setup.sh'
+[3.771s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tariq/sherlock_ros/install/_local_setup_util_sh.py'
+[3.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tariq/sherlock_ros/install/setup.sh'
+[3.778s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tariq/sherlock_ros/install/local_setup.bash'
+[3.779s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tariq/sherlock_ros/install/setup.bash'
+[3.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tariq/sherlock_ros/install/local_setup.zsh'
+[3.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tariq/sherlock_ros/install/setup.zsh'

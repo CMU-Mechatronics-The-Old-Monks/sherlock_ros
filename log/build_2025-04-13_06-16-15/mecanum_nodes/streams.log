@@ -1,0 +1,27 @@
+[3.146s] Invoking command in '/home/tariq/sherlock_ros/build/mecanum_nodes': PYTHONPATH=/home/tariq/sherlock_ros/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/mecanum_nodes/build --no-deps symlink_data
+[3.834s] running develop
+[4.748s] running egg_info
+[4.748s] creating mecanum_nodes.egg-info
+[4.749s] writing mecanum_nodes.egg-info/PKG-INFO
+[4.751s] writing dependency_links to mecanum_nodes.egg-info/dependency_links.txt
+[4.752s] writing entry points to mecanum_nodes.egg-info/entry_points.txt
+[4.752s] writing requirements to mecanum_nodes.egg-info/requires.txt
+[4.752s] writing top-level names to mecanum_nodes.egg-info/top_level.txt
+[4.753s] writing manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+[4.758s] reading manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+[4.760s] writing manifest file 'mecanum_nodes.egg-info/SOURCES.txt'
+[4.767s] running build_ext
+[4.768s] Creating /home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages/mecanum-nodes.egg-link (link to .)
+[4.771s] Installing controller script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+[4.772s] Installing planner script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+[4.772s] Installing serial_sub script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+[4.773s] Installing stepper_pub script to /home/tariq/sherlock_ros/install/mecanum_nodes/lib/mecanum_nodes
+[4.773s] 
+[4.774s] Installed /home/tariq/sherlock_ros/build/mecanum_nodes
+[4.774s] running symlink_data
+[4.775s] creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index
+[4.775s] creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index
+[4.775s] creating /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+[4.776s] symbolically linking /home/tariq/sherlock_ros/build/mecanum_nodes/resource/mecanum_nodes -> /home/tariq/sherlock_ros/install/mecanum_nodes/share/ament_index/resource_index/packages
+[4.776s] symbolically linking /home/tariq/sherlock_ros/build/mecanum_nodes/package.xml -> /home/tariq/sherlock_ros/install/mecanum_nodes/share/mecanum_nodes
+[4.913s] Invoked command in '/home/tariq/sherlock_ros/build/mecanum_nodes' returned '0': PYTHONPATH=/home/tariq/sherlock_ros/build/mecanum_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/mecanum_nodes/build --no-deps symlink_data

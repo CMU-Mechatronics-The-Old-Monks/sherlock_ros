@@ -35,8 +35,8 @@ class GoalPublisherNode(Node):
             goal = PoseStamped()
             goal.header.frame_id = 'map'
             goal.header.stamp = self.get_clock().now().to_msg()
-            goal.pose.position.x = 3.0
-            goal.pose.position.y = 3.0
+            goal.pose.position.x = 1.0
+            goal.pose.position.y = 1.0
             goal.pose.orientation.w = 1.0
 
             goal_msg = ComputePathToPose.Goal()

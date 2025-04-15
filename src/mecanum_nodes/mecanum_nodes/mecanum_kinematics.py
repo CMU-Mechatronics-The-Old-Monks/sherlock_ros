@@ -31,6 +31,7 @@ class StateIDX():
         self.velocity = (slice(3, 6), 0)
         self.linear_velocity = (slice(3, 5),0)
 
+
 class MecanumKinematics():
     '''
     paper reference: https://research.ijcaonline.org/volume113/number3/pxc3901586.pdf
@@ -192,6 +193,172 @@ class MecanumKinematics():
         s = np.sin(theta)
         
         return np.array([[c, -s, 0.0], [s, c, 0.0], [0.0, 0.0, 1.0]])
+
+
+
+
+# class MecanumKinematics():
+#     '''
+#     paper reference: https://research.ijcaonline.org/volume113/number3/pxc3901586.pdf
+
+#     NOTE (conventions):
+#         body +x (forward face of robot - longitudinal)
+#         body +y (left face of robot - transverse)
+#         wheel 1 (front left)
+#         wheel 2 (front right)
+#         wheel 3 (back left)
+#         wheel 4 (back right)
+#     '''
+
+#     def __init__(self):
+
+#         self.wheel_radius = 0.097/2   #[m]
+#         self.roller_radius = 0.01   #[m]
+#         self.roller_angle = np.pi/4 #[rad]
+        
+#         self.width = 0.31           #[m]
+#         self.length = 0.295           #[m]
+
+#         self.state = np.array([[0.0], [0.0], [0.0], [0.0], [0.0], [0.0]])
+#         self.state_idx = StateIDX()
+
+#         self.wheel_vel_vec = np.array([[0.0], [0.0], [0.0], [0.0]])
+
+#         lw = (self.width + self.length)
+        
+#         # 4x3
+#         self.IK_jacobian = (1/self.wheel_radius)*np.array([[1, -1, -lw],
+#                                                             [1, 1, lw],
+#                                                             [1, 1, -lw],
+#                                                             [1, -1, lw],])
+
+#         # 3x4
+#         self.FK_jacobian = (self.wheel_radius/4)*np.array([[1, 1, 1, 1],
+#                                                             [1, 1, 1, 1],
+#                                                             [-1/lw, 1/lw, -1/lw, 1/lw]])
+        
+#     def get_robot_position(self, ) -> NDArray[np.float64]:
+#         '''return the current 2x1 (body frame) planar position vector [[x], [y]]'''
+#         return np.reshape(self.state[self.state_idx.position], (2,1))
+    
+#     def get_robot_pose(self, ) -> NDArray[np.float64]:
+#         '''return the current 3x1 (body frame) planar pose vector [[x], [y], [theta]]'''
+#         return np.reshape(self.state[self.state_idx.pose], (3,1))
+        
+#     def get_robot_linear_velocity(self, ) -> NDArray[np.float64]:
+#         '''return the current 2x1 (body frame) linear velocity vector [[dx], [dy]]'''
+#         return np.reshape(self.state[self.state_idx.linear_velocity], (2,1))
+    
+#     def get_robot_angular_velocity(self, ) -> NDArray[np.float64]:
+#         '''return the current 1, (body is world frame) angular velocity vector [dtheta]'''
+#         return self.state[self.state_idx.dtheta]
+    
+#     def get_robot_velocity(self, ) -> NDArray[np.float64]:
+#         '''return the current 3x1 (body frame) planar velocity vector [[dx], [dy], [dtheta]]'''
+#         return np.reshape(self.state[self.state_idx.velocity], (3,1))
+    
+#     def get_wheel_velocities(self, ) -> NDArray[np.float64]:
+#         '''return the current 4x1 wheel angular velocity vector [[w1], [w2], [w3], [w4]]'''
+#         return self.wheel_vel_vec
+    
+#     def get_world_velocity(self, body_velocity: NDArray = None) -> NDArray[np.float64]:
+#         '''return the current 3x1 (world frame) planar velocity vector [[dx], [dy], [dtheta]]'''
+#         if body_velocity is not None:
+#             assert np.shape(body_velocity) == (3, 1)
+
+#         else:
+#             body_velocity = self.get_robot_velocity()
+
+#         # unpack
+#         body_vel = body_velocity[0:2, 0]
+#         body_vel_longitudinal = body_vel[0]
+#         body_vel_transverse = body_vel[1]
+#         body_dtheta = body_velocity[3,0]
+
+#         angle = np.arctan(body_vel_transverse/body_vel_longitudinal)
+#         magnitude = np.linalg.norm(body_vel)
+
+#         vx_world = magnitude*np.cos(angle)
+#         vy_world = magnitude*np.sin(angle)
+#         if angle >= np.pi:
+#             vy_world *= -1
+            
+#         return np.array([[vx_world], [vy_world], [body_dtheta]])
+    
+#     def set_robot_position(self, position: NDArray) -> None:
+#         '''
+#         set the current 2x1 (body frame) planar position vector
+#         PARAMS:
+#             position (NDArray) : 2x1 np.array([[x], [y]])
+#         '''
+#         assert np.shape(position) == (2, 1)
+#         self.state[self.state_idx.position] = position.flatten()
+
+#     def set_robot_pose(self, pose: NDArray) -> None:
+#         '''
+#         set the current 3x1 (body frame) planar pose vector
+#         PARAMS:
+#             pose (NDArray) : 3x1 np.array([[x], [y], [theta]])
+#         '''
+#         assert np.shape(pose) == (3, 1)
+#         self.state[self.state_idx.pose] = pose.flatten()
+    
+#     def set_robot_velocity(self, velocity: NDArray) -> None:
+#         '''
+#         set the current 3x1 (body frame) planar velocity vector
+#         PARAMS:
+#             velocity (NDArray) : 3x1 np.array([[dx], [dy], [dtheta]])
+#         '''
+#         assert np.shape(velocity) == (3, 1)
+#         self.state[self.state_idx.velocity] = velocity.flatten()
+
+#     def set_wheel_velocities(self, angular_velocities: NDArray) -> None:
+#         '''
+#         set the current 4x1 wheel velocity vector
+#         PARAMS:
+#             angular_velocities (NDArray) : 4x1 np.array([[w1], [w2], [w3], [w4]])
+#         '''
+#         assert np.shape(angular_velocities) in [(4,), (4, 1)]
+#         self.wheel_vel_vec = angular_velocities.flatten()
+    
+#     def compute_FK_robot_velocity(self, angular_velocities: NDArray) -> NDArray[np.float64]:
+#         '''
+#         given wheel velocities, compute the resultant nominal body velocity
+#         PARAMS:
+#             angular_velocities (NDArray) : 4x1 np.array([[w1], [w2], [w3], [w4]])
+#         '''
+#         assert np.shape(angular_velocities) == (4, 1)
+#         return self.FK_jacobian@angular_velocities
+    
+#     def compute_IK_wheel_velocities(self, body_velocity: NDArray) -> NDArray[np.float64]:
+#         '''
+#         given a desired body velocity, compute the required nominal wheel velocities
+#         PARAMS:
+#             body_velocity (NDArray) : 3x1 np.array([[dx], [dy], [dtheta]])
+#         '''
+#         assert np.shape(body_velocity) == (3, 1)
+#         return self.IK_jacobian@body_velocity
+    
+#     def compute_body_to_world_R_2D(self, theta: float = None) -> NDArray[np.float64]:
+#         '''Rotation matrix converting body frame to world frame (2D)'''
+#         if theta is None:
+#             theta = self.state[self.state_idx.theta]
+        
+#         c = np.cos(theta)
+#         s = np.sin(theta)
+        
+#         return np.array([[c, -s], [s, c]])
+    
+#     def compute_body_to_world_R_3D(self, theta: float = None) -> NDArray[np.float64]:
+#         '''Rotation matrix converting body frame to world frame (3D)'''
+#         if theta is None:
+#             theta = self.state[self.state_idx.theta]
+        
+#         c = np.cos(theta)
+#         s = np.sin(theta)
+        
+#         return np.array([[c, -s, 0.0], [s, c, 0.0], [0.0, 0.0, 1.0]])
+
 
 class MecanumDynamics():
 

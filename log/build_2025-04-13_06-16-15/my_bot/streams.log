@@ -1,0 +1,52 @@
+[3.234s] Invoking command in '/home/tariq/sherlock_ros/build/my_bot': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data
+[3.903s] running develop
+[4.477s] running egg_info
+[4.478s] creating my_bot.egg-info
+[4.479s] writing my_bot.egg-info/PKG-INFO
+[4.479s] writing dependency_links to my_bot.egg-info/dependency_links.txt
+[4.480s] writing entry points to my_bot.egg-info/entry_points.txt
+[4.481s] writing requirements to my_bot.egg-info/requires.txt
+[4.481s] writing top-level names to my_bot.egg-info/top_level.txt
+[4.482s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[4.487s] reading manifest file 'my_bot.egg-info/SOURCES.txt'
+[4.490s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[4.495s] running build_ext
+[4.496s] Creating /home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+[4.499s] Installing filtered_path_publisher_node script to /home/tariq/sherlock_ros/install/my_bot/lib/my_bot
+[4.499s] Installing goal_publisher_node script to /home/tariq/sherlock_ros/install/my_bot/lib/my_bot
+[4.500s] 
+[4.500s] Installed /home/tariq/sherlock_ros/build/my_bot
+[4.500s] running symlink_data
+[4.501s] creating /home/tariq/sherlock_ros/install/my_bot/share/ament_index
+[4.502s] creating /home/tariq/sherlock_ros/install/my_bot/share/ament_index/resource_index
+[4.502s] creating /home/tariq/sherlock_ros/install/my_bot/share/ament_index/resource_index/packages
+[4.502s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/resource/my_bot -> /home/tariq/sherlock_ros/install/my_bot/share/ament_index/resource_index/packages
+[4.503s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/package.xml -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot
+[4.503s] creating /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.503s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/localization_only.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.503s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/localization_launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.505s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/navigation_launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.506s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/global_planner_launcher.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.506s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/online_async_launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.506s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/rsp.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.507s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/minimal_gazebo_launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.507s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/bringup.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.507s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/global_planner_only.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.507s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/launch/launch_sim.launch.py -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/launch
+[4.507s] creating /home/tariq/sherlock_ros/install/my_bot/share/my_bot/config
+[4.508s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/config/mapper_params_online_async.yaml -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/config
+[4.508s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/config/map1.yaml -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/config
+[4.508s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/config/nav2_params.yaml -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/config
+[4.508s] creating /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.508s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/robot.urdf.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.508s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/robot_core.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/lidar.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/depth_camera.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/inertial_macros.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/gazebo_control.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/description/camera.xacro -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/description
+[4.509s] creating /home/tariq/sherlock_ros/install/my_bot/share/my_bot/worlds
+[4.510s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/worlds/empty.world -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/worlds
+[4.510s] symbolically linking /home/tariq/sherlock_ros/build/my_bot/worlds/obstacle_square.world -> /home/tariq/sherlock_ros/install/my_bot/share/my_bot/worlds
+[4.510s] creating /home/tariq/sherlock_ros/install/my_bot/share/my_bot/maps
+[4.625s] Invoked command in '/home/tariq/sherlock_ros/build/my_bot' returned '0': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data

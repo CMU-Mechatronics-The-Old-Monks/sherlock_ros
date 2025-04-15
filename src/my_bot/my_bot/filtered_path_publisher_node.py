@@ -25,7 +25,7 @@ class FilteredPathPublisher(Node):
     def path_callback(self, msg: Path):
         filtered_points = []
         last_x, last_y = None, None
-        min_distance = 0.75  # meters
+        min_distance = 0.15  # meters
 
         for pose in msg.poses:
             x = pose.pose.position.x
@@ -47,6 +47,7 @@ class FilteredPathPublisher(Node):
         out_msg.data = filtered_points
         self.publisher_.publish(out_msg)
         self.get_logger().info(f"Published {len(filtered_points)//2} filtered waypoints.")
+        self.get_logger().info(f"Filtered points: {filtered_points}")
 
 def main(args=None):
     rclpy.init(args=args)

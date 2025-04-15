@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tariq/sherlock_ros/build/my_bot",
+        "/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages",
+        "/home/tariq/sherlock_ros/build/mecanum_nodes",
+        "/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages",
+        "/home/tariq/linorobot2_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tariq/sherlock_ros/build/my_bot",
+        "/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages",
+        "/home/tariq/sherlock_ros/build/mecanum_nodes",
+        "/home/tariq/sherlock_ros/install/mecanum_nodes/lib/python3.10/site-packages",
+        "/home/tariq/linorobot2_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -1,0 +1,18 @@
+[1.853s] Invoking command in '/home/tariq/sherlock_ros/build/my_bot': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data
+[2.473s] running develop
+[2.929s] running egg_info
+[2.930s] writing my_bot.egg-info/PKG-INFO
+[2.930s] writing dependency_links to my_bot.egg-info/dependency_links.txt
+[2.931s] writing entry points to my_bot.egg-info/entry_points.txt
+[2.931s] writing requirements to my_bot.egg-info/requires.txt
+[2.932s] writing top-level names to my_bot.egg-info/top_level.txt
+[2.936s] reading manifest file 'my_bot.egg-info/SOURCES.txt'
+[2.938s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[2.941s] running build_ext
+[2.942s] Creating /home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+[2.944s] Installing filtered_path_publisher_node script to /home/tariq/sherlock_ros/install/my_bot/lib/my_bot
+[2.944s] Installing goal_publisher_node script to /home/tariq/sherlock_ros/install/my_bot/lib/my_bot
+[2.945s] 
+[2.945s] Installed /home/tariq/sherlock_ros/build/my_bot
+[2.945s] running symlink_data
+[3.002s] Invoked command in '/home/tariq/sherlock_ros/build/my_bot' returned '0': PYTHONPATH=/home/tariq/sherlock_ros/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tariq/sherlock_ros/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tariq/sherlock_ros/build/my_bot/build --no-deps symlink_data

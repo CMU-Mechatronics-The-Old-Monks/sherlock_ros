@@ -24,7 +24,7 @@ def create_cubic_3D(x0, y0, theta0, x1, y1, theta1, T):
     return x_traj, y_traj, theta_traj
 
 
-def plan_waypoints(waypoints, segment_time=2.0):
+def plan_waypoints(waypoints, segment_time=1.0):
     """Return list of segments: (x_traj, y_traj, theta_traj, T)."""
     segments = []
     for i in range(len(waypoints)-1):
@@ -61,7 +61,7 @@ class PlannerNode(Node):
             return
         # Convert to (x, y, theta=0.0)
         waypoints = [(flat[i], flat[i+1], 0.0) for i in range(0, len(flat), 2)]
-        self.segments = plan_waypoints(waypoints, segment_time=1.0)
+        self.segments = plan_waypoints(waypoints, segment_time=0.5)
         self.current_segment = 0
         self.t = 0.0
         self.is_ready = True

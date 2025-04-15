@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.000618] (mecanum_nodes) JobQueued: {'identifier': 'mecanum_nodes', 'dependencies': OrderedDict()}
+[0.000676] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.000717] (mecanum_nodes) JobStarted: {'identifier': 'mecanum_nodes'}
+[0.013003] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.099298] (-) TimerEvent: {}
+[0.199655] (-) TimerEvent: {}
+[0.299944] (-) TimerEvent: {}
+[0.400285] (-) TimerEvent: {}
+[0.500938] (-) TimerEvent: {}
+[0.601360] (-) TimerEvent: {}
+[0.701651] (-) TimerEvent: {}
+[0.710775] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[0.711651] (mecanum_nodes) JobEnded: {'identifier': 'mecanum_nodes', 'rc': 'SIGINT'}
+[0.722152] (-) EventReactorShutdown: {}
