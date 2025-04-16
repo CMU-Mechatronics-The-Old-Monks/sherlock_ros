@@ -22,14 +22,12 @@ class StepperMotorNode(Node):
             self.outlet_callback,
             10)
         
-        
-        
         self.latest_outlet_value = 0.0
 
         
         # Open serial port for Teensy communication
         try:
-            self.Manager = DataManager(4, '/dev/ttyACM0', 115200, timeout=1)
+            self.Manager = DataManager(5, '/dev/ttyACM0', 115200, timeout=1)
             # self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
             # self.serial_port.dtr = False  # Disable DTR to avoid reset
             # self.serial_port.rts = False  # Disable RTS to avoid reset
@@ -37,15 +35,6 @@ class StepperMotorNode(Node):
             time.sleep(2)  # Allow Teensy to initialize
             
             self.get_logger().info('Serial port /dev/ttyACM0 opened successfully with DTR/RTS disabled')
-
-            # === New Functionality ===
-            # Setup receiver for 7-length data from Teensy
-            self.recv_manager = DataManager(7, '/dev/ttyACM0', 115200, timeout=1)
-            self.recv_publisher = self.create_publisher(Float32MultiArray, 'fused_body_vel', 10)
-            self.recv_timer = self.create_timer(0.001, self.receive_from_teensy)
-
-            # ==========================
-
         except serial.SerialException as e:
             self.get_logger().error(f'Unable to open serial port: {e}')
             self.serial_port = None
@@ -59,19 +48,16 @@ class StepperMotorNode(Node):
         self.get_logger().info(f'Received wheel vels command: {command}')
         merged = list(command) + [self.latest_outlet_value]
 
-        
+        # Send command to Teensy via serial
+        # if self.serial_port and self.serial_port.is_open:
+        #     #command_str = f'{command}\n'  # Send command as string with newline
+        #     #self.serial_port.write(command_str.encode('utf-8'))
+        #     self.Manager.pack_and_transmit(command)
+        #     self.get_logger().info(f'Sent command to Teensy: {command}')
+        # else:
+        #     self.get_logger().error('Serial port not open or unavailable.')
         self.Manager.pack_and_transmit(merged)
         self.get_logger().info(f'Sent command to Teensy: {merged}')
-
-    # === New Function ===
-    def receive_from_teensy(self):
-        if self.recv_manager.receive_data():
-            recv_data = self.recv_manager.parse_data()
-            msg = Float32MultiArray()
-            msg.data = recv_data
-            self.recv_publisher.publish(msg)
-            self.get_logger().info(f'Published telemetry from Teensy: {recv_data}')
-    # ====================
 
 
 def main(args=None):
