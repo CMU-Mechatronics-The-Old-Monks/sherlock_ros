@@ -47,7 +47,7 @@ def generate_launch_description():
         ),
         Node(
             package='mecanum_nodes',
-            executable='controller',
+            executable='feedback_controller_node',
             name='fbController',
             output='screen'
         ),

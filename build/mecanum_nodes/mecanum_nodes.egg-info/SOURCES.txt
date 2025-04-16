@@ -5,6 +5,7 @@ mecanum_nodes/__init__.py
 mecanum_nodes/controller_node.py
 mecanum_nodes/data_manager.py
 mecanum_nodes/data_packet.py
+mecanum_nodes/fbController.py
 mecanum_nodes/main.py
 mecanum_nodes/mecanum_kinematics.py
 mecanum_nodes/planner_node.py
